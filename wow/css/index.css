@@ -1,0 +1,643 @@
+html {
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+
+body {
+   overflow-x: hidden;
+   width: 100%;
+   font-family: "Helvetica neue", Helvetica, "lantinghei sc", 'Microsoft Yahei', '微软雅黑', sans-serif !important;
+   ;
+   font-size: 16px;
+   -ms-overflow-style: scrollbar;
+   position: fixed !important;
+   top: 0 !important;
+   left: 0 !important;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+   margin: 0;
+   padding: 0;
+   font-weight: normal;
+}
+
+input,
+button,
+select,
+textarea {
+   outline: none
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0
+}
+
+fieldset,
+img {
+   border: 0
+}
+
+li {
+   list-style: none
+}
+
+caption,
+th {
+   text-align: left
+}
+
+th {
+   vertical-align: baseline
+}
+
+* {
+   outline: none;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   -o-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+   color: #575757;
+   font-size: 16px;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+.tr3 {
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -ms-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+   position: relative;
+   min-height: 1px;
+   padding-right: 0;
+   padding-left: 0;
+}
+
+.btn-group-vertical>.btn-group::after,
+.btn-group-vertical>.btn-group::before,
+.btn-toolbar::after,
+.btn-toolbar::before,
+.clearfix::after,
+.clearfix::before,
+.container-fluid::after,
+.container-fluid::before,
+.container::after,
+.container::before,
+.dl-horizontal dd::after,
+.dl-horizontal dd::before,
+.form-horizontal .form-group::after,
+.form-horizontal .form-group::before,
+.modal-footer::after,
+.modal-footer::before,
+.modal-header::after,
+.modal-header::before,
+.nav::after,
+.nav::before,
+.navbar-collapse::after,
+.navbar-collapse::before,
+.navbar-header::after,
+.navbar-header::before,
+.navbar::after,
+.navbar::before,
+.pager::after,
+.pager::before,
+.panel-body::after,
+.panel-body::before,
+.row::after,
+.row::before {
+   display: none
+}
+
+
+/* -------------------------------文字样式------------------------------------- */
+/* @font-face {
+   font-family: 'siyuanR';
+   src: url('./fontmin/SourceHanSansCN-Regular/SourceHanSansCN-Regular.eot'),
+      url('./fontmin/SourceHanSansCN-Regular/SourceHanSansCN-Regular.woff') format('woff'),
+      url('./fontmin/SourceHanSansCN-Regular/SourceHanSansCN-Regular.TTF') format('truetype'),
+      url('./fontmin/SourceHanSansCN-Regular/SourceHanSansCN-Regular.svg') format('svg');
+   font-style: normal;
+   font-weight: normal;
+} */
+
+/* ----------------------------动画----------------------------------- */
+
+.delay500 {
+   animation-delay: 0.5s;
+   -webkit-animation-delay: 0.5s;
+}
+
+.delay800 {
+   animation-delay: 0.8s;
+   -webkit-animation-delay: 0.8s;
+}
+
+.delay1000 {
+   animation-delay: 1s;
+   -webkit-animation-delay: 1s;
+}
+
+.delay1200 {
+   animation-delay: 1.2s;
+   -webkit-animation-delay: 1.2s;
+}
+
+.delay1500 {
+   animation-delay: 1.5s;
+   -webkit-animation-delay: 1.5s;
+}
+
+.delay1600 {
+   animation-delay: 1.6s;
+   -webkit-animation-delay: 1.6s;
+}
+
+.delay2000 {
+   animation-delay: 2s;
+   -webkit-animation-delay: 2s;
+}
+
+.du500 {
+   animation-duration: 0.5s;
+   -webkit-animation-duration: 0.5s;
+}
+
+
+.rotateA {
+   animation: rotateA 3s infinite linear 0s;
+   -webkit-animation: rotateA 3s infinite linear 0s;
+}
+
+.rotateB {
+   animation: rotateB 2.5s infinite linear 0s;
+   -webkit-animation: rotateB 2.5s infinite linear 0s;
+}
+
+.rotateC {
+   animation: rotateA 1.2s infinite linear 0s;
+   -webkit-animation: rotateA 1.2s infinite linear 0s;
+}
+
+.scaleA {
+   animation: scaleA 2s infinite linear 0s;
+   -webkit-animation: scaleA 2s infinite linear 0s;
+}
+
+@keyframes rotateA {
+
+   0% {
+      transform: rotate(0);
+   }
+
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@-webkit-keyframes rotateA {
+
+   0% {
+      transform: rotate(0);
+   }
+
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes rotateB {
+
+   0% {
+      transform: rotate(0);
+   }
+
+
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
+@-webkit-keyframes rotateB {
+
+   0% {
+      transform: rotate(0);
+   }
+
+
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
+@keyframes scaleA {
+
+   0% {
+      transform: scale(1);
+      opacity: 0;
+   }
+
+   50% {
+      transform: scale(0.9);
+      opacity: 1;
+   }
+
+
+   100% {
+      transform: scale(1);
+      opacity: 0;
+   }
+}
+
+@-webkit-keyframes scaleA {
+   0% {
+      transform: scale(1);
+      opacity: 0;
+   }
+
+   50% {
+      transform: scale(0.9);
+      opacity: 1;
+   }
+
+
+   100% {
+      transform: scale(1);
+      opacity: 0;
+   }
+}
+
+/* -------------------------------------------公共---------------------------------*/
+
+* {
+   -webkit-user-select: none;
+   touch-action: pan-y;
+}
+
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+input {
+   -webkit-user-select: auto;
+}
+
+img {
+   /*pointer-events: none;*/
+}
+
+.none {
+   display: none
+}
+
+.relative {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   position: relative;
+   top: 0;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+section {
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+   top: 0;
+   overflow: hidden;
+}
+
+.bg {
+   width: 100%;
+   position: fixed;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+}
+
+.bg1 {
+   width: 100%;
+   min-height: 100%;
+   display: block
+}
+
+.back {
+   position: absolute;
+   width: 0.75rem;
+   height: 0.72rem;
+   right: 0.06rem;
+   top: 0.05rem;
+   z-index: 5;
+}
+
+.logo1 {
+   position: absolute;
+   width: 3.64rem;
+   height: 0.32rem;
+   z-index: 5;
+   top: 0.13rem;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+
+.logo2 {
+   position: absolute;
+   width: 3.64rem;
+   height: 0.32rem;
+   z-index: 5;
+   top: 0.13rem;
+   left: 0.13rem;
+}
+
+/* 上下左右居中 */
+.common-middle {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+/* --------------------------------------------独立------------------------------ */
+/* loading */
+.page-loading .load-box {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.page-loading .load-box .img-box {
+   width: 2.24rem;
+   height: 2.24rem;
+   position: relative;
+}
+
+.page-loading .load-box .img-box .img {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.page-loading .load-box .img-box .yy {
+   position: absolute;
+   left: 0;
+   right: 0;
+   width: 1.17rem;
+   height: 0.2rem;
+   margin: auto;
+   bottom: -0.5rem;
+}
+
+.page-loading .load-box .img-box .text {
+   font-family: SourceHanSansCN-Medium;
+   font-size: 0.5rem;
+   text-align: center;
+   top: 0.76rem;
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: auto;
+   font-weight: bold;
+   font-stretch: normal;
+   letter-spacing: 0;
+   color: #ffffff;
+}
+
+.page-loading .text-box {
+   font-family: SourceHanSansCN-Regular;
+   font-size: 0.27rem;
+   font-weight: normal;
+   font-stretch: normal;
+   letter-spacing: 0;
+   text-align: center;
+   color: #ffffff;
+   margin-top: 0.8rem;
+}
+
+/* -----------------page-long公共--------- */
+.long-box {
+   width: 100%;
+   height: 100%;
+   overflow-y: scroll;
+   position: relative;
+}
+
+/* -----------------page-long1--------- */
+.page-long1 .long-1-title {
+   position: absolute;
+   width: 3.83rem;
+   left: 0;
+   right: 0;
+   margin: auto;
+   top: 0.9rem;
+}
+
+.page-long1 .box-1 {
+   width: 4.7rem;
+   height: 6.94rem;
+   position: absolute;
+   top: 3rem;
+   left: 1.26rem;
+}
+
+.page-long1 .box-1 .box-1-img-1 {
+   width: 100%;
+   height: 100%;
+}
+
+.page-long1 .box-1 .box-1-img-2 {
+   width: 1.72rem;
+   position: absolute;
+   right: -0.18rem;
+   top: -0.5rem;
+}
+
+.page-long1 .box-1 .box-1-img-3 {
+   width: 4.6rem;
+   position: absolute;
+   left: -1.1rem;
+   top: 1.8rem;
+}
+
+.page-long1 .box-1 .box-1-img-4 {
+   width: 0.99rem;
+   position: absolute;
+   left: 0.3rem;
+   top: 3.55rem;
+}
+
+.page-long1 .box-1 .box-1-img-5 {
+   width: 3.1rem;
+   position: absolute;
+   left: 1rem;
+   top: 2rem;
+}
+
+.page-long1 .box-1 .box-1-img-6 {
+   width: 5.24rem;
+   position: absolute;
+   right: 0.09rem;
+   top: 0.4rem;
+}
+
+.page-long1 .box-2 {
+   width: 2.75rem;
+   height: 20.1rem;
+   position: absolute;
+   top: 9.82rem;
+   left: 1.8rem;
+}
+
+.page-long1 .box-2 .box-1-img-1 {
+   width: 100%;
+   height: 100%;
+}
+
+.page-long1 .box-2 .box-1-img-2 {
+   width: 2.27rem;
+   position: absolute;
+   top: 2.6rem;
+   left: 1.9rem;
+}
+
+.page-long1 .box-2 .box-1-img-3 {
+   width: 4.51rem;
+   position: absolute;
+   top: 1.25rem;
+   right: -0.5rem;
+}
+
+.page-long1 .box-2 .box-1-img-4 {
+   width: 3.95rem;
+   position: absolute;
+   top: 1.9rem;
+   right: -1.1rem;
+}
+
+.page-long1 .box-2 .box-1-img-5 {
+   width: 5.45rem;
+   position: absolute;
+   top: 7.5rem;
+   right: -1.8rem;
+}
+
+.page-long1 .box-3 {
+   width: 5.54rem;
+   height: 7.64rem;
+   position: absolute;
+   top: 21.75rem;
+   left: 0.1rem;
+}
+
+.page-long1 .box-3 .box-1-img-1 {
+   width: 100%;
+   height: 100%;
+}
+
+.page-long1 .box-3 .box-1-img-2 {
+   width: 2.96rem;
+   position: absolute;
+   top: 0.7rem;
+   right: 0.45rem;
+}
+
+.page-long1 .box-3 .box-1-img-3 {
+   width: 0.94rem;
+   position: absolute;
+   top: 5.35rem;
+   left: 0.1rem;
+
+}

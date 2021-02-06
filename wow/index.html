@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+   <meta http-equiv="X-UA-Compatible" content="UTF-8">
+   <title>wow插件</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <!-- 公共样式 -->
+   <link rel="stylesheet" href="css/animate.css">
+   <!-- 独立样式 -->
+   <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+   <script>
+      // 自适应REM
+      window.onload = function () {
+         getRem(640, 100)
+      };
+      window.onresize = function () {
+         getRem(640, 100)
+      };
+      getRem(640, 100);
+
+      function getRem(pwidth, prem) {
+         var html = document.getElementsByTagName("html")[0];
+         var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+         html.style.fontSize = oWidth / pwidth * prem + "px";
+      }
+   </script>
+   <!-- 长图1 -->
+   <section class="page-long1">
+      <div class="long-box miwow-box">
+         <!-- 背景 -->
+         <img src="./imgs/long1/bg.png" alt="" class="bg1">
+         <!-- 内容 -->
+         <img src="./imgs/long1/title.png" alt="" class="long-1-title miwow fadeIn">
+         <div class="box-1">
+            <div class="relative">
+               <img src="./imgs/long1/rect2.png" alt="" class="box-1-img-1 miwow fadeInLeft" data-miwow-duration="2s"
+                  data-miwow-delay="5s" data-miwow-offset="400">
+               <img src="./imgs/long1/le2.png" alt="" class="box-1-img-2 miwow fadeInRight">
+               <img src="./imgs/long1/rect1.png" alt="" class="box-1-img-3 miwow fadeInUp">
+               <img src="./imgs/long1/le1.png" alt="" class="box-1-img-4 miwow fadeInDown">
+               <img src="./imgs/long1/text1.png" alt="" class="box-1-img-5 miwow fadeIn">
+               <img src="./imgs/long1/p1.png" alt="" class="box-1-img-6 miwow fadeInLeft">
+            </div>
+         </div>
+         <div class="box-2">
+            <div class="relative">
+               <img src="./imgs/long1/rect3.png" alt="" class="box-1-img-1 miwow fadeInRight">
+               <img src="./imgs/long1/rect4.png" alt="" class="box-1-img-2 miwow fadeInDown">
+               <img src="./imgs/long1/text3.png" alt="" class="box-1-img-3 miwow fadeInLeft">
+               <img src="./imgs/long1/p3.png" alt="" class="box-1-img-4 miwow fadeInDown">
+               <img src="./imgs/long1/text2.png" alt="" class="box-1-img-5 miwow fadeInUp">
+            </div>
+         </div>
+         <div class="box-3">
+            <div class="relative">
+               <img src="./imgs/long1/text4.png" alt="" class="box-1-img-1 miwow fadeInUp">
+               <img src="./imgs/long1/p2.png" alt="" class="box-1-img-2 miwow fadeInLeft">
+               <img src="./imgs/long1/le3.png" alt="" class="box-1-img-3 miwow fadeInRight">
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <!-- 公共JS -->
+   <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+   <script src="js/miwow.min.js"></script>
+   <script>
+      new Miwow().init();
+   </script>
+</body>
+
+</html>
